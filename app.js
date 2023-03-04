@@ -2,11 +2,11 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.get("/", (req, res) => res.type('html').send(html));
+app.get("/", (req, res) => res.type('html').send(html2));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
-
+const html2=`<html>   <head>  <meta name="viewport" content="width=device-width, initial-scale=1.0"></head> <body>  <a href="http://152.67.160.139:3000/watch" referrerpolicy="origin" style="font-weight: bolder;" >karumuga Bank Nifty  </a><br><br><a href="http://152.67.160.139:9000/watch" style="font-weight: bolder;">karumuga Nifty </a><br> <br><a href="http://152.67.162.92:3000/watch" style="font-weight: bolder;" > <a href="http://129.154.39.199:3000/watch" referrerpolicy="origin" style="font-weight: bolder;" >Dayanitha Bank Nifty  </a><br><br><a href="http://129.154.39.199:9000/watch" style="font-weight: bolder;">Dayanitha Nifty </a><br> <br><a href="http://152.67.162.92:3000/watch" style="font-weight: bolder;" > Paper Bank Nifty </a><br><br><a href="http://152.67.162.92:9000/watch" style="font-weight: bolder;" >Paper Nifty </a><br><br><a href="http://152.67.162.92:4000/watch" style="font-weight: bolder;" >Paper FinNifty </a>  </body></html>`
 const html = `
 <!DOCTYPE html>
 <html>
